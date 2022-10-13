@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.1.2/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <title>Smrt Dashboard</title>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <div class="header">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="images/Vector Smart Object.png" alt="">
+                    <p>RECOGNITION</p>
+                </div>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="header-phone-dropdown">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <div class="header-right phone-header">
+                <div class="settings circle dropdown-button" data-target="settings-dropdown">
+                    <i class=" fa-solid fa-gear"></i>
+                    <div class="dropdown-links" id="settings-dropdown">
+                        <ul>
+                            <li><a href="">MY PROFILE</a></li>
+                            <li><a href="">MY PANEL</a></li>
+                            <li><a href="">SECURITY</a></li>
+                            <li><a href="">LOGOUT</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="count circle">
+                    <p>7</p>
+                </div>
+                <div class="profile dropdown-button" data-target="profile-dropdown">
+                    <div class="image">
+                        <img src="images/image.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <p>T. JOBLONSKI</p>
+                    </div>
+                    <div class="dropdown-icon">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="dropdown-links" id="profile-dropdown">
+                        <ul>
+                            <li><a href="">MY PROFILE</a></li>
+                            <li><a href="">MY PANEL</a></li>
+                            <li><a href="">SECURITY</a></li>
+                            <li><a href="">LOGOUT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clock">
+                    <p id="header-clock">11:21 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="page">
+            <div class="sidebar-nav">
+                <div>
+                    <div class="collapsed-sidebar"></div>
+                    <div class="sidebar-top">
+                        <div class="profile">
+                            <div class="image-outer">
+                                <div class="image">
+                                    <img src="images/image.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="name">
+                                <p>T. JOBLONSKI</p>
+                            </div>
+                            <div class="role">
+                                <p>ADMINISTRATOR</p>
+                            </div>
+                        </div>
+                        <div class="calendar">
+                            <div class="calendar-inner">
+                                <div class="outer-box">
+                                    <div class="year">
+                                        <p id="calendar-year">2019</p>
+                                    </div>
+                                    <div class="date">
+                                        <p id="calendar-date">12 DEC</p>
+                                    </div>
+                                </div>
+                                <div class="location">
+                                    <p>LAHORE, PK</p>
+                                </div>
+                            </div>
+                            <div class="calendar-hide">
+                                <p><i class="fa-solid fa-caret-left"></i> HIDE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="link active">
+                                        <div class="icon"> <i class="fa-solid fa-tv"></i>
+                                        </div>
+                                        <div class="text">
+                                            DASHBOARD
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="link">
+                                        <div class="icon"><i class="fa-regular fa-comment"></i></i>
+                                        </div>
+                                        <div class="text">
+                                            MESSAGES
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="link">
+                                        <div class="icon"> <i class="fa-regular fa-user"></i>
+                                        </div>
+                                        <div class="text">
+                                            BUYER PERSONA
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="link">
+                                    <div class="icon"> <i class="fa-solid fa-gear"></i>
+                                    </div>
+                                    <div class="text">
+                                        <div class="setting-links">
+                                            <ul>
+                                                <li><a href="">MY PROFILE</a></li>
+                                                <li><a href="">MY PANEL</a></li>
+                                                <li><a href="">SECURITY</a></li>
+                                                <li><a href="">LOGOUT</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="main-dashboard">
+
+                <!-- top numbers -->
+
+                <div class="numbers">
+                    <div class="total-visitors number-col">
+                        <div class="icon visitor">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="data">
+                            <div class="data-number">
+                                <p>38</p>
+                            </div>
+                            <div class="data-label">
+                                <p>TOTAL VISITORS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="male-vs-female  number-col">
+                        <div class="icon mvsf">
+                            <i class="fa-solid fa-person"></i>
+                            <i class="fa-solid fa-person-dress"></i>
+                        </div>
+                        <div class="data">
+                            <div class="data-number">
+                                <p>59/125</p>
+                            </div>
+                            <div class="data-label">
+                                <p>MALE VS. FEMALE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avg-age number-col">
+                        <div class="icon age">
+                            <i class="fa-solid fa-hourglass-end"></i>
+                        </div>
+                        <div class="data">
+                            <div class="data-number">
+                                <p>87</p>
+                            </div>
+                            <div class="data-label">
+                                <p>AVG. AGE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avg-time number-col">
+                        <div class="icon time">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="data">
+                            <div class="data-number">
+                                <p>43</p>
+                            </div>
+                            <div class="data-label">
+                                <p>AVG. TIME</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section 1 -->
+
+                <div class="section-1 section">
+
+                    <!-- analysis -->
+
+                    <div class="analysis section-col">
+                        <div class="section-top">
+                            <div class="label">
+                                <p class="section-label">ANALYSIS</p>
+                                <span>3</span>
+                            </div>
+                            <div class="dropdown section-dropdown">
+                                <select name="" id="">
+                                    <option value="">Last week</option>
+                                    <option value="">Last month</option>
+                                    <option value="">Last year</option>
+                                </select>
+                                <div class="section-dropdown-icon dropdown-button" data-target="analysis-dropdown">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                                <div class="dropdown-links" id="analysis-dropdown">
+                                    <ul>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="analysis-data-outer">
+                            <div class="analysis-data">
+                                <div class="analysis-col">
+                                    <div class="image">
+                                        <img src="images/POS.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p>45%</p>
+                                    </div>
+                                </div>
+                                <div class="analysis-col">
+                                    <div class="image">
+                                        <img src="images/NEUTRAL.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p>35%</p>
+                                    </div>
+                                </div>
+                                <div class="analysis-col">
+                                    <div class="image">
+                                        <img src="images/NEG.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p>20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- divider -->
+
+                    <div class="divider">
+                        <div class="inner-divider"></div>
+                    </div>
+
+                    <!-- section 1 chart -->
+
+                    <div class="section-1-chart section-col">
+                        <div class="section-top">
+                            <div class="label">
+                                <p class="section-label">STATISTICS</p>
+                                <!-- <span>3</span> -->
+                            </div>
+                            <div class="dropdown section-dropdown">
+                                <select name="" id="">
+                                    <option value="">Last week</option>
+                                    <option value="">Last month</option>
+                                    <option value="">Last year</option>
+                                </select>
+                                <div class="section-dropdown-icon dropdown-button" data-target="chart1-dropdown">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                                <div class="dropdown-links" id="chart1-dropdown">
+                                    <ul>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-data">
+                            <div class="chart-canvas">
+                                <canvas id="myChart" height="150"></canvas>
+                            </div>
+
+                            <div class="chart-options">
+                                <span>amount of visitors</span>
+                                <span class="active">male vs female</span>
+                                <span>avg age</span>
+                                <span>avg time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section 2 -->
+
+                <div class="section section-2">
+
+                    <!-- male vs female -->
+
+                    <div class="mvf-per section-col">
+                        <div class="section-top">
+                            <div class="label">
+                                <p class="section-label">MALE VS FEMALE</p>
+                                <!-- <span>3</span> -->
+                            </div>
+                            <div class="dropdown section-dropdown section-dropdown-icon">
+                                <div class="section-dropdown-icon dropdown-button" data-target="mvf-dropdown">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                                <div class="dropdown-links" id="mvf-dropdown">
+                                    <ul>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mvf-data-outer">
+                            <div class="mvf-data">
+                                <div class="female mvf-col">
+                                    <div class="mvf-image female-image">
+                                        <img src="images/woman.png" alt="">
+                                    </div>
+                                    <div class="mvf-data-per female-per">
+                                        <p>40%</p>
+                                    </div>
+                                </div>
+                                <div class="male mvf-col">
+                                    <div class="mvf-image male-image">
+                                        <img src="images/man.png" alt="">
+                                    </div>
+                                    <div class="mvf-data-per male-per">
+                                        <p>50%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- divider -->
+
+                    <div class="divider">
+                        <div class="inner-divider"></div>
+                    </div>
+
+                    <!-- average time -->
+
+                    <div class="avg-time section-col">
+                        <div class="section-top">
+                            <div class="label">
+                                <p class="section-label">AVG DWELL TIME</p>
+                                <!-- <span>5</span> -->
+                            </div>
+                            <div class="dropdown section-dropdown section-dropdown-icon">
+                                <div class="section-dropdown-icon dropdown-button" data-target="avgtime-dropdown">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                                <div class="dropdown-links" id="avgtime-dropdown">
+                                    <ul>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="avg-time-data-outer">
+                            <div class="avg-time-data">
+                                <div class="circle">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70" id="timer"></circle>
+                                    </svg>
+                                    <div class="timer">
+                                        <p id="minutes">3:05</p>
+                                        <p>minutes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- divider -->
+
+                    <div class="divider">
+                        <div class="inner-divider"></div>
+                    </div>
+
+                    <!-- age groups -->
+
+                    <div class="age-groups section-col">
+                        <div class="section-top">
+                            <div class="label">
+                                <p class="section-label">AGE GROUPS</p>
+                                <span>8</span>
+                            </div>
+                            <div class="dropdown section-dropdown">
+                                <select name="" id="">
+                                    <option value="">Last week</option>
+                                    <option value="">Last month</option>
+                                    <option value="">Last year</option>
+                                </select>
+                                <div class="section-dropdown-icon dropdown-button" data-target="age-groups-dropdown">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                                <div class="dropdown-links" id="age-groups-dropdown">
+                                    <ul>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="age-groups-data-outer">
+                            <div class="age-groups-data">
+                                <div class="nationality-table section-table">
+                                    <table>
+                                        <tr>
+                                            <th>Crowd Size</th>
+                                            <th>Video 1</th>
+                                            <th>Video 2</th>
+                                            <th>Total</th>
+                                        </tr>
+                                        <tr>
+                                            <th>00:00-14:59</th>
+                                            <td>21</td>
+                                            <td>2</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <th>15:00-29:59</th>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <th>30:00-44:59</th>
+                                            <td>2</td>
+                                            <td>12</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <th>45:00-59:59</th>
+                                            <td>3</td>
+                                            <td>0</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th>60:00-74:59</th>
+                                            <td>15</td>
+                                            <td>5</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th>75:00-89:59</th>
+                                            <td>15</td>
+                                            <td>5</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th>90:00-104:59</th>
+                                            <td>15</td>
+                                            <td>5</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th>105:00-119:59</th>
+                                            <td>15</td>
+                                            <td>5</td>
+                                            <td>9</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- section 3 -->
+
+                <div class="section section-3">
+
+                    <!-- nationality -->
+
+                    <div class="nationality section-col">
+                        <div class="section-top ">
+                            <div class="label">
+                                <p class="section-label">STATISTICS</p>
+                                <span>8</span>
+                            </div>
+                            <div class="dropdown section-dropdown">
+                                <select name="" id="">
+                                    <option value="">Last week</option>
+                                    <option value="">Last month</option>
+                                    <option value="">Last year</option>
+                                </select>
+                                <div class="section-dropdown-icon dropdown-button" data-target="nationality-dropdown">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                                <div class="dropdown-links" id="nationality-dropdown">
+                                    <ul>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nationality-data-outer">
+                            <div class="nationality-table section-table">
+                                <table>
+                                    <tr>
+                                        <th>Video 1</th>
+                                        <th>00:00-14:59</th>
+                                        <th>15:00-29:59</th>
+                                        <th>30:00-44:59</th>
+                                        <th>45:00-59:59</th>
+                                        <th>60:00-74:59</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Caucasian %</th>
+                                        <td>48.38%</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>48.38%</td>
+                                        <td>48.38%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Black %</th>
+                                        <td>0.00%</td>
+                                        <td>2824</td>
+                                        <td>2824</td>
+                                        <td>0.00%</td>
+                                        <td>0.00%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Hispanic %</th>
+                                        <td>28.29%</td>
+                                        <td>1371</td>
+                                        <td>1371</td>
+                                        <td>28.29%</td>
+                                        <td>28.29%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Asian %</th>
+                                        <td>23.33%</td>
+                                        <td>1055</td>
+                                        <td>1055</td>
+                                        <td>23.33%</td>
+                                        <td>23.33%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- divider -->
+
+                    <div class="divider">
+                        <div class="inner-divider"></div>
+                    </div>
+
+                    <!-- repeated visitors -->
+
+                    <div class="repeated-visitors section-col">
+                        <div class="section-top">
+                            <div class="label">
+                                <p class="section-label">REPEATED VISITORS</p>
+                                <span>5</span>
+                            </div>
+                            <div class="dropdown section-dropdown section-dropdown-icon">
+                                <!-- <select name="" id="">
+                                    <option value="">Last week</option>
+                                    <option value="">Last month</option>
+                                    <option value="">Last year</option>
+                                </select> -->
+                                <div class="section-dropdown-icon dropdown-button" data-target="repeated-dropdown">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                                <div class="dropdown-links" id="repeated-dropdown">
+                                    <ul>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                        <li><a href="">option</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="repeated-visistors-data-outer">
+                            <div class="repeated-visistors-data">
+                                <div class="chart-canvas2">
+                                    <canvas id="myChart2" height="150"></canvas>
+                                </div>
+                                <div class="repeated-legend">
+                                    <div class="video video-1">
+                                        <span></span>
+                                        <p>VIDEO-1</p>
+                                    </div>
+                                    <div class="video video-2">
+                                        <span></span>
+                                        <p> VIDEO-2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="footer-logo">
+                        <img src="images/Aqomi_Logo_Pink_Web_Small.png" alt="">
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="panel-body">
+         -->
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+        integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/sideBar.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/dropdown.js"></script>
+
+</body>
+
+</html>
